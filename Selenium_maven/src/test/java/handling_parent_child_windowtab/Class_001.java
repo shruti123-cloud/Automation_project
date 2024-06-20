@@ -12,7 +12,7 @@ public class Class_001 extends Baseclass_1{
 	public static void main(String[] args) {
 launch_browser("chrome");
 navigate_url("https://www.salesforce.com/in/");
-//click watch demo
+//click watch demo    
 driver.findElement(By.xpath("//a[@label='Watch demo']")).click();
 //to capture window id
 Set<String> window_id = driver.getWindowHandles();

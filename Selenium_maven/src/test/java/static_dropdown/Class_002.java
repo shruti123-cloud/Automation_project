@@ -2,11 +2,12 @@ package static_dropdown;
 
 import java.util.List;
 
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import baseclass.Baseclass_1;
-//with loop
+//with loop-when webelements is not associated with select tag
 public class Class_002 extends Baseclass_1{
 
 	public static void main(String[] args) {
@@ -22,7 +23,7 @@ public class Class_002 extends Baseclass_1{
  //choose one option from seven
  for(int i = 0; i<7; i++) {
 	 if(options.get(i).getText().equalsIgnoreCase("self")) {
-		 options.get(i).click();
+		 options.get(i).click();     
 	 }
  }
  

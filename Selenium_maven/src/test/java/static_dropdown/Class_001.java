@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import baseclass.Baseclass_1;
-//with select class
+//with select class-when web element is associated with select tag
 public class Class_001 extends Baseclass_1 {
 
 	public static void main(String[] args) {
@@ -19,16 +19,18 @@ public class Class_001 extends Baseclass_1 {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-WebElement profile_dropdown = driver.findElement(By.xpath("(//select[@class='sel_lng'])[1]"));
-  //select class with argument as dropdown
-         Select s = new Select(profile_dropdown);
-    //select option by visible text
+		WebElement profile_dropdown = driver.findElement(By.xpath("(//select[@class='sel_lng'])[1]"));
+	//select class with argument as dropdown(locator as a argument to locate the textbox)
+       Select s = new Select(profile_dropdown);
+       //select option by visible text
     	s.selectByVisibleText("Self");
-    //select by value
+    	//select by value            
     	//s.selectByValue("1");
         //select option by index
     	//s.selectByIndex(2);
-    	
+    	//s.isMultiple(); returns true if the dropdown elements allows
+        // multiple selection at time
+    	//s.deselectAll();clears all selected entries
 	
 		
 				
